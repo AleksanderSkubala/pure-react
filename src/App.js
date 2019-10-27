@@ -2,6 +2,10 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  function sayHello() {
+    alert('HELLO!');
+  };
+
   return (
     <div className="App">
       <header className="App__header">
@@ -9,14 +13,9 @@ function App() {
           Aleksander Skubała
         </h1>
         <p>first pure React page</p>
-        <a
-          className="App__link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button className="App__button" onClick={sayHello}>
+          <span>Hello</span>
+        </button>
       </header>
     </div>
   );
