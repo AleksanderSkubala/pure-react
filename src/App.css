@@ -42,6 +42,7 @@
 .App__button span {
   position: relative;
   color: white;
+  text-transform: uppercase;
   font-size: calc(8px + 3vmin);
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
@@ -69,4 +70,8 @@
 
 .App__button:hover::before {
   transform: scaleX(1);
+}
+
+.red {
+  color: #E53A40;
 }
